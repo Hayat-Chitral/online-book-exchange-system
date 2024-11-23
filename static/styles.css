@@ -42,18 +42,25 @@
 }
 
 /* Centered text */
+.hero-text a{
+    color:#fff;
+    text-decoration: none;
+}
 .hero-text {
-    text-align: center;
-    color: white; /* Text color */
-    font-size: 3rem; /* Large text for desktop */
+    font-size: 2rem;
+    color: #fff;
+    font-size: 3rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    padding: 0 20px; /* Some padding for smaller screens */
+    margin-left: 80px;
 }
 
 /* Responsive text adjustments */
 @media (max-width: 768px) {
     .hero-text {
-        font-size: 2rem; /* Smaller text on tablets */
+  
     }
 }
 

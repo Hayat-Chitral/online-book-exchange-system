@@ -40,6 +40,11 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html')
 
+# This is route is to redirect to Main Page
+@app.route('/main_page')
+def mainPage():
+    return render_template('main.html')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
