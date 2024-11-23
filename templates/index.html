@@ -2,8 +2,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Available Books</h1>
-<table class="table table-bordered">
+
+
+<div class="hero-container">
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h1>Click to Open the Gate to Exchange Books</h1>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <h1>Available Books</h1> -->
+ <!-- <div class="banner-img">
+     <img src="{{ url_for('static', filename='images/banner.jpg') }}" class="img-fluid" alt="Banner">
+ </div>
+ <div class="banner-text">
+    <button type="button" class="btn btn-primary">Click to Open the gate to exchange Books</button>
+ </div> -->
+<!-- <table class="table table-bordered">
     <thead>
         <tr>
             <th>Title</th>
@@ -27,5 +46,5 @@
         {% endfor %}
     </tbody>
 </table>
-<a href="{{ url_for('add_book') }}" class="btn btn-success">Add a Book</a>
+<a href="{{ url_for('add_book') }}" class="btn btn-success">Add a Book</a> -->
 {% endblock %}
