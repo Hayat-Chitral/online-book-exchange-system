@@ -61,11 +61,11 @@ body{
 }
 
 /* Responsive text adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hero-text {
   
     }
-}
+} */
 
 @media (max-width: 576px) {
     .hero-text {
