@@ -1,9 +1,6 @@
 <!-- templates/index.html -->
 {% extends "base.html" %}
-
 {% block content %}
-
-
 <div class="hero-container">
     <div class="hero-overlay">
         <div class="hero-text">
@@ -11,40 +8,4 @@
         </div>
     </div>
 </div>
-
-
-
-
-<!-- <h1>Available Books</h1> -->
- <!-- <div class="banner-img">
-     <img src="{{ url_for('static', filename='images/banner.jpg') }}" class="img-fluid" alt="Banner">
- </div>
- <div class="banner-text">
-    <button type="button" class="btn btn-primary">Click to Open the gate to exchange Books</button>
- </div> -->
-<!-- <table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for book in books %}
-        <tr>
-            <td>{{ book.title }}</td>
-            <td>{{ book.author }}</td>
-            <td>
-                {% if 'user_id' in session %}
-                <form action="{{ url_for('add_book') }}" method="get">
-                    <button class="btn btn-primary">Request</button>
-                </form>
-                {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-<a href="{{ url_for('add_book') }}" class="btn btn-success">Add a Book</a> -->
 {% endblock %}

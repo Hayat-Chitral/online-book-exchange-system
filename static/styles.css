@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #f5f6fa;
+}
 .header{
     background-color: #553830;
 }
@@ -69,3 +72,17 @@
         font-size: 1.5rem; /* Even smaller text on mobile */
     }
 }
+
+.card-img-fixed {
+    object-fit: cover; 
+    height: 200px;
+    width: 100%;
+  }
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+

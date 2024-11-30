@@ -2,14 +2,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container-fluid">
 
-</div>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="container-fluid px-0">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -22,14 +24,69 @@
         <img src="{{ url_for('static', filename='images/main-page/main_page_3.png') }}" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</div>
+<div class="container-fluid mt-5">
+  <div class="row mx-2">
+    <div class="col-12 col-lg-2 col-md-2">
+      <ul class="list-group">
+        <li class="list-group-item active disabled">Select Book Category</li>
+        <li class="list-group-item">Fiction</li>
+        <li class="list-group-item">Non-Fiction</li>
+        <li class="list-group-item">Children's Books</li>
+        <li class="list-group-item">Educational</li>
+        <li class="list-group-item">Poetry</li>
+        <li class="list-group-item">Spirituality & Religion</li>
+        <li class="list-group-item">Science</li>
+      </ul>
+    </div>
+    <div class="col-12 col-lg-3 col-md-3">
+      <div class="card shadow-lg mb-5 bg-body rounded">
+        <img src="{{ url_for('static', filename='images/card-imgs/book-cover1.jpg') }}"
+          class="card-img-top img-fluid card-img-fixed" alt="Book Cover 1">
+        <div class="card-body">
+          <h5 class="card-title">Book Title</h5>
+          <p class="card-text">Short Description about book</p>
+          <a href="" class="btn btn-primary" id="request_exchange_btn">Request to Exchange</a>
+        </div>
+      </div>
+    </div>
 
-  {% endblock %}
+    <div class="col-12 col-lg-3 col-md-3">
+      <div class="card shadow-lg mb-5 bg-body rounded">
+        <img src="{{ url_for('static', filename='images/card-imgs/book-cover2.jpg') }}"
+          class="card-img-top img-fluid card-img-fixed" alt="Book Cover 2">
+        <div class="card-body">
+          <h5 class="card-title">Book Title</h5>
+          <p class="card-text">Short Description about book</p>
+          <a href="#" class="btn btn-primary">Request to Exchange</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 col-md-3">
+      <div class="card shadow-lg mb-5 bg-body rounded">
+        <img src="{{ url_for('static', filename='images/card-imgs/book-cover3.jpg') }}"
+          class="card-img-top img-fluid card-img-fixed" alt="Book Cover 3">
+        <div class="card-body">
+          <h5 class="card-title">Book Title</h5>
+          <p class="card-text">Short Description about book</p>
+          <a href="" class="btn btn-primary">Request to Exchange</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-1 col-md-1">
+    </div>
+  </div>
+</div>
+{% endblock %}
